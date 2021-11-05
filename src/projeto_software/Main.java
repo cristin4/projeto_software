@@ -1,10 +1,16 @@
 package projeto_software;
 
+
+
+import entities.Menu;
+
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Menu telaInicial = new Menu();
+		telaInicial.start();
+		
 	}
 
 }
