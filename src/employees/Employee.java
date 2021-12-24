@@ -25,11 +25,11 @@ public abstract class Employee {
 		return this.name;
 	}
 
-	public void setAdress(String address) {
+	public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getAdress() {
+	public String getAddress() {
 		return this.address;
 	}
 

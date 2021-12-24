@@ -12,9 +12,10 @@ public class Commissioned extends Employee {
     private double commPerSale;
     private double Commission;
 
-    public Commissioned(int uniqueID, String name, String address, String payType, String paySchedule) {
-        this.id = uniqueID;
+    public Commissioned(int id, String name, String address, boolean union, String payType, String paySchedule) {
+        this.id = id;
         this.name = name;
+        this.union = union;
         this.address = address;
         this.payType = payType;
         this.paySchedule = paySchedule;
@@ -65,6 +66,14 @@ public class Commissioned extends Employee {
     public void resetWorkDays() {
         workDays = 0;
     }
+    
+    public String getAddress() {
+		return this.address;
+	}
+    
+    public String getPayType() {
+		return this.payType;
+	}
 
     public void setCommPerSale(double commPerSale) {
         this.commPerSale = commPerSale;
